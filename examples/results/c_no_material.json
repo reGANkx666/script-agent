@@ -1,0 +1,340 @@
+{
+  "run_id": "example-c_no_material",
+  "passed": true,
+  "status": "NO_MATERIAL",
+  "result": {
+    "status": "NO_MATERIAL",
+    "script": null,
+    "sources": [],
+    "estimated_duration_sec": null,
+    "target_duration_sec": 30,
+    "risks": [
+      {
+        "code": "DEFAULTED_FIELD",
+        "field": "audience",
+        "value": "短视频入门用户"
+      },
+      {
+        "code": "DEFAULTED_FIELD",
+        "field": "style",
+        "value": "轻快、口语化"
+      }
+    ],
+    "violations": [],
+    "attempts": {
+      "steps": 3,
+      "tool_calls": 2,
+      "revisions": 0,
+      "rewrites": 2
+    },
+    "suggestions": [
+      "补充产品资料",
+      "换一个更宽泛的主题"
+    ]
+  },
+  "error": {
+    "status": "NO_MATERIAL",
+    "message": "没有可用素材"
+  },
+  "trace": [
+    {
+      "seq": 1,
+      "event_type": "node.started",
+      "node": "validate_input",
+      "payload": {
+        "step": 0,
+        "status": "QUEUED"
+      }
+    },
+    {
+      "seq": 2,
+      "event_type": "tool.result",
+      "node": "validate_input",
+      "payload": {
+        "missing_fields": [],
+        "risk_codes": [
+          "DEFAULTED_FIELD",
+          "DEFAULTED_FIELD"
+        ]
+      }
+    },
+    {
+      "seq": 3,
+      "event_type": "node.completed",
+      "node": "validate_input",
+      "payload": {
+        "updated_keys": [
+          "brief",
+          "current_node",
+          "last_observation",
+          "missing_fields",
+          "pending_action",
+          "risks",
+          "status"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 4,
+      "event_type": "node.started",
+      "node": "agent",
+      "payload": {
+        "step": 0,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 5,
+      "event_type": "action.selected",
+      "node": "agent",
+      "payload": {
+        "action": "search_materials",
+        "args": {
+          "query": "字幕"
+        },
+        "basis": "第一次检索",
+        "step": 1
+      }
+    },
+    {
+      "seq": 6,
+      "event_type": "node.completed",
+      "node": "agent",
+      "payload": {
+        "updated_keys": [
+          "current_node",
+          "pending_action",
+          "status",
+          "step"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 7,
+      "event_type": "node.started",
+      "node": "search_materials",
+      "payload": {
+        "step": 1,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 8,
+      "event_type": "tool.called",
+      "node": "search_materials",
+      "payload": {
+        "query": "字幕",
+        "top_k": 5
+      }
+    },
+    {
+      "seq": 9,
+      "event_type": "tool.result",
+      "node": "search_materials",
+      "payload": {
+        "status": "EMPTY",
+        "query": "字幕",
+        "source_ids": [],
+        "result_count": 0,
+        "context_count": 0,
+        "rerank_status": "disabled",
+        "error": null
+      }
+    },
+    {
+      "seq": 10,
+      "event_type": "node.completed",
+      "node": "search_materials",
+      "payload": {
+        "updated_keys": [
+          "claims",
+          "contexts",
+          "current_node",
+          "last_observation",
+          "materials",
+          "pending_action",
+          "rewrite_count",
+          "risks",
+          "searched_queries",
+          "tool_calls"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 11,
+      "event_type": "node.started",
+      "node": "agent",
+      "payload": {
+        "step": 1,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 12,
+      "event_type": "action.selected",
+      "node": "agent",
+      "payload": {
+        "action": "search_materials",
+        "args": {
+          "query": "添加字幕"
+        },
+        "basis": "换词重试",
+        "step": 2
+      }
+    },
+    {
+      "seq": 13,
+      "event_type": "node.completed",
+      "node": "agent",
+      "payload": {
+        "updated_keys": [
+          "current_node",
+          "pending_action",
+          "status",
+          "step"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 14,
+      "event_type": "node.started",
+      "node": "search_materials",
+      "payload": {
+        "step": 2,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 15,
+      "event_type": "tool.called",
+      "node": "search_materials",
+      "payload": {
+        "query": "添加字幕",
+        "top_k": 5
+      }
+    },
+    {
+      "seq": 16,
+      "event_type": "tool.result",
+      "node": "search_materials",
+      "payload": {
+        "status": "EMPTY",
+        "query": "添加字幕",
+        "source_ids": [],
+        "result_count": 0,
+        "context_count": 0,
+        "rerank_status": "disabled",
+        "error": null
+      }
+    },
+    {
+      "seq": 17,
+      "event_type": "node.completed",
+      "node": "search_materials",
+      "payload": {
+        "updated_keys": [
+          "claims",
+          "contexts",
+          "current_node",
+          "last_observation",
+          "materials",
+          "pending_action",
+          "rewrite_count",
+          "risks",
+          "searched_queries",
+          "tool_calls"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 18,
+      "event_type": "node.started",
+      "node": "agent",
+      "payload": {
+        "step": 2,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 19,
+      "event_type": "action.selected",
+      "node": "agent",
+      "payload": {
+        "action": "fail",
+        "args": {
+          "status": "NO_MATERIAL",
+          "message": "没有可用素材"
+        },
+        "basis": "两次检索均为空",
+        "step": 3
+      }
+    },
+    {
+      "seq": 20,
+      "event_type": "node.completed",
+      "node": "agent",
+      "payload": {
+        "updated_keys": [
+          "current_node",
+          "pending_action",
+          "status",
+          "step"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 21,
+      "event_type": "node.started",
+      "node": "fail",
+      "payload": {
+        "step": 3,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 22,
+      "event_type": "run.failed",
+      "node": "fail",
+      "payload": {
+        "status": "NO_MATERIAL",
+        "message": "没有可用素材",
+        "steps": 3
+      }
+    },
+    {
+      "seq": 23,
+      "event_type": "node.completed",
+      "node": "fail",
+      "payload": {
+        "updated_keys": [
+          "current_node",
+          "error",
+          "last_observation",
+          "pending_action",
+          "pending_question",
+          "result",
+          "status"
+        ],
+        "status": "NO_MATERIAL"
+      }
+    }
+  ],
+  "assertions": {
+    "final_status": {
+      "expected": "NO_MATERIAL",
+      "actual": "NO_MATERIAL",
+      "passed": true
+    },
+    "max_steps": {
+      "expected": 8,
+      "actual": 3,
+      "passed": true
+    }
+  }
+}

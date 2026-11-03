@@ -1,0 +1,14 @@
+{
+  "name": "b_missing_information",
+  "brief": {
+    "topic": "新手做短视频，字幕怎么加"
+  },
+  "scenario": {
+    "decisions": [],
+    "tool_overrides": {}
+  },
+  "assertions": {
+    "final_status": "WAITING_INPUT",
+    "max_steps": 0
+  }
+}

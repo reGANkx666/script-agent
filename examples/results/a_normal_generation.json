@@ -1,0 +1,679 @@
+{
+  "run_id": "example-a_normal_generation",
+  "passed": true,
+  "status": "SUCCESS",
+  "result": {
+    "status": "SUCCESS",
+    "script": {
+      "script_id": "draft_02",
+      "title": "字幕入门",
+      "shots": [
+        {
+          "shot_id": "S01",
+          "visual": "产品界面操作画面",
+          "narration": "产品支持字幕功能",
+          "subtitle": "字幕功能",
+          "duration_sec": 28,
+          "visual_hold_sec": 0,
+          "claim_ids": [
+            "C-P01"
+          ]
+        }
+      ]
+    },
+    "sources": [
+      {
+        "source_id": "P01",
+        "claim_id": "C-P01",
+        "text": "产品支持字幕功能",
+        "source": "产品说明 v1.2",
+        "source_type": "product_brief"
+      }
+    ],
+    "estimated_duration_sec": 28,
+    "target_duration_sec": 30,
+    "risks": [],
+    "violations": [],
+    "attempts": {
+      "steps": 7,
+      "tool_calls": 6,
+      "revisions": 1,
+      "rewrites": 0
+    },
+    "suggestions": []
+  },
+  "error": null,
+  "trace": [
+    {
+      "seq": 1,
+      "event_type": "node.started",
+      "node": "validate_input",
+      "payload": {
+        "step": 0,
+        "status": "QUEUED"
+      }
+    },
+    {
+      "seq": 2,
+      "event_type": "tool.result",
+      "node": "validate_input",
+      "payload": {
+        "missing_fields": [],
+        "risk_codes": []
+      }
+    },
+    {
+      "seq": 3,
+      "event_type": "node.completed",
+      "node": "validate_input",
+      "payload": {
+        "updated_keys": [
+          "brief",
+          "current_node",
+          "last_observation",
+          "missing_fields",
+          "pending_action",
+          "risks",
+          "status"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 4,
+      "event_type": "node.started",
+      "node": "agent",
+      "payload": {
+        "step": 0,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 5,
+      "event_type": "action.selected",
+      "node": "agent",
+      "payload": {
+        "action": "search_materials",
+        "args": {
+          "query": "字幕",
+          "top_k": 5
+        },
+        "basis": "先找字幕功能素材",
+        "step": 1
+      }
+    },
+    {
+      "seq": 6,
+      "event_type": "node.completed",
+      "node": "agent",
+      "payload": {
+        "updated_keys": [
+          "current_node",
+          "pending_action",
+          "status",
+          "step"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 7,
+      "event_type": "node.started",
+      "node": "search_materials",
+      "payload": {
+        "step": 1,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 8,
+      "event_type": "tool.called",
+      "node": "search_materials",
+      "payload": {
+        "query": "字幕",
+        "top_k": 5
+      }
+    },
+    {
+      "seq": 9,
+      "event_type": "tool.result",
+      "node": "search_materials",
+      "payload": {
+        "status": "OK",
+        "query": "字幕",
+        "source_ids": [
+          "P01"
+        ],
+        "result_count": 1,
+        "context_count": 0,
+        "rerank_status": "disabled",
+        "error": null
+      }
+    },
+    {
+      "seq": 10,
+      "event_type": "node.completed",
+      "node": "search_materials",
+      "payload": {
+        "updated_keys": [
+          "claims",
+          "contexts",
+          "current_node",
+          "last_observation",
+          "materials",
+          "pending_action",
+          "rewrite_count",
+          "risks",
+          "searched_queries",
+          "tool_calls"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 11,
+      "event_type": "node.started",
+      "node": "agent",
+      "payload": {
+        "step": 1,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 12,
+      "event_type": "action.selected",
+      "node": "agent",
+      "payload": {
+        "action": "draft_script",
+        "args": {},
+        "basis": "用 P01 生成首稿",
+        "step": 2
+      }
+    },
+    {
+      "seq": 13,
+      "event_type": "node.completed",
+      "node": "agent",
+      "payload": {
+        "updated_keys": [
+          "current_node",
+          "pending_action",
+          "status",
+          "step"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 14,
+      "event_type": "node.started",
+      "node": "draft_script",
+      "payload": {
+        "step": 2,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 15,
+      "event_type": "tool.called",
+      "node": "draft_script",
+      "payload": {
+        "claim_ids": [
+          "C-P01"
+        ]
+      }
+    },
+    {
+      "seq": 16,
+      "event_type": "tool.result",
+      "node": "draft_script",
+      "payload": {
+        "action": "draft_script",
+        "status": "OK",
+        "script_id": "draft_01",
+        "shot_count": 1,
+        "claim_ids": [
+          "C-P01"
+        ]
+      }
+    },
+    {
+      "seq": 17,
+      "event_type": "node.completed",
+      "node": "draft_script",
+      "payload": {
+        "updated_keys": [
+          "check",
+          "current_node",
+          "draft",
+          "duration",
+          "last_observation",
+          "pending_action",
+          "tool_calls"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 18,
+      "event_type": "node.started",
+      "node": "agent",
+      "payload": {
+        "step": 2,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 19,
+      "event_type": "action.selected",
+      "node": "agent",
+      "payload": {
+        "action": "estimate_duration",
+        "args": {},
+        "basis": "检查首稿时长",
+        "step": 3
+      }
+    },
+    {
+      "seq": 20,
+      "event_type": "node.completed",
+      "node": "agent",
+      "payload": {
+        "updated_keys": [
+          "current_node",
+          "pending_action",
+          "status",
+          "step"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 21,
+      "event_type": "node.started",
+      "node": "estimate_duration",
+      "payload": {
+        "step": 3,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 22,
+      "event_type": "tool.called",
+      "node": "estimate_duration",
+      "payload": {
+        "script_id": "draft_01",
+        "target_sec": 30
+      }
+    },
+    {
+      "seq": 23,
+      "event_type": "tool.result",
+      "node": "estimate_duration",
+      "payload": {
+        "action": "estimate_duration",
+        "status": "OK",
+        "total_sec": 38,
+        "target_sec": 30,
+        "tolerance_sec": 2,
+        "passed": false
+      }
+    },
+    {
+      "seq": 24,
+      "event_type": "node.completed",
+      "node": "estimate_duration",
+      "payload": {
+        "updated_keys": [
+          "check",
+          "current_node",
+          "draft",
+          "duration",
+          "last_observation",
+          "pending_action",
+          "tool_calls"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 25,
+      "event_type": "node.started",
+      "node": "agent",
+      "payload": {
+        "step": 3,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 26,
+      "event_type": "action.selected",
+      "node": "agent",
+      "payload": {
+        "action": "revise_script",
+        "args": {},
+        "basis": "首稿 38 秒，压缩到目标附近",
+        "step": 4
+      }
+    },
+    {
+      "seq": 27,
+      "event_type": "node.completed",
+      "node": "agent",
+      "payload": {
+        "updated_keys": [
+          "current_node",
+          "pending_action",
+          "status",
+          "step"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 28,
+      "event_type": "node.started",
+      "node": "revise_script",
+      "payload": {
+        "step": 4,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 29,
+      "event_type": "tool.called",
+      "node": "revise_script",
+      "payload": {
+        "revision": 1,
+        "violation_codes": [
+          "DURATION_OVER"
+        ]
+      }
+    },
+    {
+      "seq": 30,
+      "event_type": "tool.result",
+      "node": "revise_script",
+      "payload": {
+        "action": "revise_script",
+        "status": "OK",
+        "script_id": "draft_02",
+        "revision": 1,
+        "shot_count": 1
+      }
+    },
+    {
+      "seq": 31,
+      "event_type": "node.completed",
+      "node": "revise_script",
+      "payload": {
+        "updated_keys": [
+          "check",
+          "current_node",
+          "draft",
+          "duration",
+          "last_observation",
+          "pending_action",
+          "revision_count",
+          "tool_calls"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 32,
+      "event_type": "node.started",
+      "node": "agent",
+      "payload": {
+        "step": 4,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 33,
+      "event_type": "action.selected",
+      "node": "agent",
+      "payload": {
+        "action": "estimate_duration",
+        "args": {},
+        "basis": "复核修订稿",
+        "step": 5
+      }
+    },
+    {
+      "seq": 34,
+      "event_type": "node.completed",
+      "node": "agent",
+      "payload": {
+        "updated_keys": [
+          "current_node",
+          "pending_action",
+          "status",
+          "step"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 35,
+      "event_type": "node.started",
+      "node": "estimate_duration",
+      "payload": {
+        "step": 5,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 36,
+      "event_type": "tool.called",
+      "node": "estimate_duration",
+      "payload": {
+        "script_id": "draft_02",
+        "target_sec": 30
+      }
+    },
+    {
+      "seq": 37,
+      "event_type": "tool.result",
+      "node": "estimate_duration",
+      "payload": {
+        "action": "estimate_duration",
+        "status": "OK",
+        "total_sec": 28,
+        "target_sec": 30,
+        "tolerance_sec": 2,
+        "passed": true
+      }
+    },
+    {
+      "seq": 38,
+      "event_type": "node.completed",
+      "node": "estimate_duration",
+      "payload": {
+        "updated_keys": [
+          "check",
+          "current_node",
+          "draft",
+          "duration",
+          "last_observation",
+          "pending_action",
+          "tool_calls"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 39,
+      "event_type": "node.started",
+      "node": "agent",
+      "payload": {
+        "step": 5,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 40,
+      "event_type": "action.selected",
+      "node": "agent",
+      "payload": {
+        "action": "check_rules",
+        "args": {},
+        "basis": "检查品牌和平台规则",
+        "step": 6
+      }
+    },
+    {
+      "seq": 41,
+      "event_type": "node.completed",
+      "node": "agent",
+      "payload": {
+        "updated_keys": [
+          "current_node",
+          "pending_action",
+          "status",
+          "step"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 42,
+      "event_type": "node.started",
+      "node": "check_rules",
+      "payload": {
+        "step": 6,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 43,
+      "event_type": "tool.called",
+      "node": "check_rules",
+      "payload": {
+        "platform": "抖音"
+      }
+    },
+    {
+      "seq": 44,
+      "event_type": "tool.result",
+      "node": "check_rules",
+      "payload": {
+        "action": "check_rules",
+        "status": "OK",
+        "passed": true,
+        "violation_codes": [],
+        "block_count": 0
+      }
+    },
+    {
+      "seq": 45,
+      "event_type": "node.completed",
+      "node": "check_rules",
+      "payload": {
+        "updated_keys": [
+          "check",
+          "current_node",
+          "last_observation",
+          "pending_action",
+          "risks",
+          "tool_calls"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 46,
+      "event_type": "node.started",
+      "node": "agent",
+      "payload": {
+        "step": 6,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 47,
+      "event_type": "action.selected",
+      "node": "agent",
+      "payload": {
+        "action": "finalize",
+        "args": {},
+        "basis": "时长和规则均通过",
+        "step": 7
+      }
+    },
+    {
+      "seq": 48,
+      "event_type": "node.completed",
+      "node": "agent",
+      "payload": {
+        "updated_keys": [
+          "current_node",
+          "pending_action",
+          "status",
+          "step"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 49,
+      "event_type": "node.started",
+      "node": "finalize",
+      "payload": {
+        "step": 7,
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 50,
+      "event_type": "run.completed",
+      "node": "finalize",
+      "payload": {
+        "status": "SUCCESS",
+        "sources": [
+          "P01"
+        ],
+        "estimated_duration_sec": 28
+      }
+    },
+    {
+      "seq": 51,
+      "event_type": "node.completed",
+      "node": "finalize",
+      "payload": {
+        "updated_keys": [
+          "check",
+          "current_node",
+          "error",
+          "pending_action",
+          "result",
+          "status"
+        ],
+        "status": "SUCCESS"
+      }
+    }
+  ],
+  "assertions": {
+    "final_status": {
+      "expected": "SUCCESS",
+      "actual": "SUCCESS",
+      "passed": true
+    },
+    "must_include_source": {
+      "expected": "P01",
+      "actual": [
+        "P01"
+      ],
+      "passed": true
+    },
+    "max_steps": {
+      "expected": 8,
+      "actual": 7,
+      "passed": true
+    },
+    "must_not_include_text": {
+      "expected_absent": "效率提升 80%",
+      "passed": true
+    }
+  }
+}

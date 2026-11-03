@@ -1,0 +1,24 @@
+{
+  "mode": "mock",
+  "brief": {
+    "topic": "新手做短视频，字幕怎么加",
+    "platform": "抖音",
+    "target_duration_sec": 30
+  },
+  "scenario": {
+    "decisions": [
+      {
+        "action": "fail",
+        "args": {
+          "status": "NO_MATERIAL",
+          "message": "测试请求：没有可用素材"
+        },
+        "basis": "示例请求"
+      }
+    ]
+  },
+  "assertions": {
+    "final_status": "NO_MATERIAL",
+    "max_steps": 8
+  }
+}

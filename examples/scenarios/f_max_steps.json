@@ -1,0 +1,104 @@
+{
+  "name": "f_max_steps",
+  "brief": {
+    "topic": "验证预算上限",
+    "platform": "抖音",
+    "target_duration_sec": 30
+  },
+  "settings": {
+    "max_steps": 4
+  },
+  "scenario": {
+    "decisions": [
+      {
+        "action": "search_materials",
+        "args": {
+          "query": "字幕"
+        },
+        "basis": "先获取事实来源"
+      },
+      {
+        "action": "draft_script",
+        "args": {},
+        "basis": "重复写作 1"
+      },
+      {
+        "action": "draft_script",
+        "args": {},
+        "basis": "重复写作 2"
+      },
+      {
+        "action": "draft_script",
+        "args": {},
+        "basis": "重复写作 3"
+      }
+    ],
+    "scripts": [
+      {
+        "script_id": "draft-loop",
+        "title": "预算演示",
+        "shots": [
+          {
+            "shot_id": "S01",
+            "visual": "操作画面",
+            "narration": "产品支持字幕功能",
+            "subtitle": "预算上限",
+            "duration_sec": 10,
+            "claim_ids": [
+              "C-P01"
+            ]
+          }
+        ]
+      },
+      {
+        "script_id": "draft-loop",
+        "title": "预算演示",
+        "shots": [
+          {
+            "shot_id": "S01",
+            "visual": "操作画面",
+            "narration": "产品支持字幕功能",
+            "subtitle": "预算上限",
+            "duration_sec": 10,
+            "claim_ids": [
+              "C-P01"
+            ]
+          }
+        ]
+      },
+      {
+        "script_id": "draft-loop",
+        "title": "预算演示",
+        "shots": [
+          {
+            "shot_id": "S01",
+            "visual": "操作画面",
+            "narration": "产品支持字幕功能",
+            "subtitle": "预算上限",
+            "duration_sec": 10,
+            "claim_ids": [
+              "C-P01"
+            ]
+          }
+        ]
+      }
+    ],
+    "tool_overrides": {
+      "search_materials": [
+        {
+          "status": "OK",
+          "results": [
+            {
+              "source_id": "P01",
+              "text": "产品支持字幕功能"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "assertions": {
+    "final_status": "MAX_STEPS",
+    "max_steps": 4
+  }
+}

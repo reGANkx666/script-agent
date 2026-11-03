@@ -1,0 +1,8 @@
+﻿..........................................                               [100%]
+============================== warnings summary ===============================
+.venv\Lib\site-packages\_pytest\cacheprovider.py:487
+  C:\Users\ybc\Documents\deepseek-harness\XiaoYingTch\scriptAgent\.venv\Lib\site-packages\_pytest\cacheprovider.py:487: PytestCacheWarning: could not create cache path C:\Users\ybc\Documents\deepseek-harness\XiaoYingTch\scriptAgent\.pytest_cache\v\cache\nodeids: [WinError 183] ���ļ��Ѵ���ʱ���޷��������ļ���: 'C:\\Users\\ybc\\Documents\\deepseek-harness\\XiaoYingTch\\scriptAgent\\.pytest_cache\\v\\cache'
+    config.cache.set("cache/nodeids", sorted(str(n) for n in self.cached_nodeids))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+42 passed, 1 warning in 2.77s

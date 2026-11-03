@@ -1,0 +1,973 @@
+[
+  {
+    "id": "P01",
+    "text": "产品支持字幕功能",
+    "source": "产品说明 v1.2",
+    "source_type": "product_brief",
+    "scope": "中国大陆版",
+    "tags": [
+      "feature"
+    ],
+    "active": true
+  },
+  {
+    "id": "K01",
+    "text": "字幕应与口播同步出现",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "subtitle",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K02",
+    "text": "每行字幕只表达一个意思",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "subtitle",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K03",
+    "text": "字幕断句应跟随口播停顿",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "subtitle",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K04",
+    "text": "字幕字号应保证手机竖屏可读",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "subtitle",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K05",
+    "text": "字幕应避开画面关键信息区域",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "subtitle",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K06",
+    "text": "字幕颜色与背景应有足够对比",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "subtitle",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K07",
+    "text": "字幕位置在全片中应保持一致",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "subtitle",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K08",
+    "text": "专有名词首次出现时可加简短解释",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "subtitle",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K09",
+    "text": "数字和单位应写成统一格式",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "subtitle",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K10",
+    "text": "字幕标点应精简，避免连续感叹号",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "subtitle",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K11",
+    "text": "开头先说明视频要解决的问题",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "structure",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K12",
+    "text": "正文按步骤组织，每个步骤只讲一个动作",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "structure",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K13",
+    "text": "结尾给出一个明确行动建议",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "structure",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K14",
+    "text": "分镜之间用同一主题串联",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "structure",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K15",
+    "text": "每个分镜只承担一个信息点",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "structure",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K16",
+    "text": "口播句子以短句为主",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "structure",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K17",
+    "text": "转场应服务于内容节奏",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "structure",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K18",
+    "text": "标题应概括视频核心问题",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "structure",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K19",
+    "text": "封面文字应与标题一致",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "structure",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K20",
+    "text": "脚本长度应先按目标时长估算",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "structure",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K21",
+    "text": "开头可以直接提出用户常见问题",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "hook",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K22",
+    "text": "开头可以用结果画面吸引注意",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "hook",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K23",
+    "text": "开头应避免与主题无关的寒暄",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "hook",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K24",
+    "text": "开头信息应与正文一致",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "hook",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K25",
+    "text": "开头承诺的内容必须在正文出现",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "hook",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K26",
+    "text": "开头不宜堆叠多个问题",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "hook",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K27",
+    "text": "开头字幕应简短",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "hook",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K28",
+    "text": "开头镜头应让主体清晰可见",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "hook",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K29",
+    "text": "开头声音应清楚，避免环境噪声",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "hook",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K30",
+    "text": "开头三秒内应出现主题关键词",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "hook",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K31",
+    "text": "口播语速应保持稳定",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "delivery",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K32",
+    "text": "长句应拆成多个短句",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "delivery",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K33",
+    "text": "重点词可以通过停顿强调",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "delivery",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K34",
+    "text": "口播与字幕应避免逐字不一致",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "delivery",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K35",
+    "text": "数字信息应放慢语速",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "delivery",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K36",
+    "text": "每段口播只讲一个重点",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "delivery",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K37",
+    "text": "避免连续使用同一句式",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "delivery",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K38",
+    "text": "口语表达应少用书面语连接词",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "delivery",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K39",
+    "text": "录制前先通读脚本",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "delivery",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K40",
+    "text": "口播结尾应回到主题",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "delivery",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K41",
+    "text": "竖屏视频应保证主体位于画面安全区域",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "production",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K42",
+    "text": "录制前检查光线是否均匀",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "production",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K43",
+    "text": "手持拍摄应尽量保持稳定",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "production",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K44",
+    "text": "关键动作可以使用近景展示",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "production",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K45",
+    "text": "操作步骤可以用录屏辅助说明",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "production",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K46",
+    "text": "剪辑时应删除重复和无效片段",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "production",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K47",
+    "text": "转场时长应与内容节奏匹配",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "production",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K48",
+    "text": "背景音乐音量不应盖过口播",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "production",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K49",
+    "text": "重要信息可以配合画面文字强调",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "production",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K50",
+    "text": "导出前检查音画是否同步",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "production",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K51",
+    "text": "内容应避免虚假承诺",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "compliance",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K52",
+    "text": "引用他人素材应确认授权",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "compliance",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K53",
+    "text": "涉及价格信息时应标注适用范围",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "compliance",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K54",
+    "text": "涉及功能描述时应与产品实际一致",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "compliance",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K55",
+    "text": "避免使用无法验证的对比结论",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "compliance",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K56",
+    "text": "避免诱导用户进行高风险操作",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "compliance",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K57",
+    "text": "涉及个人信息时应做遮挡处理",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "compliance",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K58",
+    "text": "商业内容应按平台要求进行标识",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "compliance",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K59",
+    "text": "发布前应检查平台社区规范",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "compliance",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K60",
+    "text": "不同平台的画幅和时长要求可能不同",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "compliance",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K61",
+    "text": "使用背景音乐前应确认授权范围",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "rights",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K62",
+    "text": "使用影视片段前应确认授权",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "rights",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K63",
+    "text": "使用字体前应确认商用许可",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "rights",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K64",
+    "text": "使用图片前应记录来源",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "rights",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K65",
+    "text": "使用用户投稿素材前应取得许可",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "rights",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K66",
+    "text": "素材文件名应便于追溯来源",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "rights",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K67",
+    "text": "删除素材前应保留备份",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "rights",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K68",
+    "text": "对外发布前应检查素材清单",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "rights",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K69",
+    "text": "合成素材应标注生成方式",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "rights",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K70",
+    "text": "引用数据时应保留原始出处",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "rights",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K71",
+    "text": "发布前应预览完整成片",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "publishing",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K72",
+    "text": "发布文案应与视频内容一致",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "publishing",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K73",
+    "text": "封面与标题应避免夸张误导",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "publishing",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K74",
+    "text": "发布后应记录发布时间和平台",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "publishing",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K75",
+    "text": "复盘时应区分内容问题和分发问题",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "publishing",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K76",
+    "text": "评论反馈可以用于发现表达不清之处",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "publishing",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K77",
+    "text": "数据波动时应结合样本量判断",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "publishing",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K78",
+    "text": "同一主题可以制作不同开头版本",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "publishing",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K79",
+    "text": "版本对比应一次只改一个变量",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "publishing",
+      "guideline"
+    ],
+    "active": true
+  },
+  {
+    "id": "K80",
+    "text": "迭代记录应保留修改原因",
+    "source": "Synthetic short-video knowledge base v1.0",
+    "source_type": "synthetic_kb",
+    "scope": "通用",
+    "tags": [
+      "publishing",
+      "guideline"
+    ],
+    "active": true
+  }
+]

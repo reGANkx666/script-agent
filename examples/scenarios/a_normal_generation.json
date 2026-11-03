@@ -1,0 +1,68 @@
+{
+  "name": "a_normal_generation",
+  "brief": {
+    "topic": "新手做短视频，字幕怎么加",
+    "audience": "20-30 岁短视频新手",
+    "platform": "抖音",
+    "target_duration_sec": 30,
+    "style": "轻快、口语化"
+  },
+  "scenario": {
+    "decisions": [
+      {"action": "search_materials", "args": {"query": "字幕", "top_k": 5}, "basis": "先找字幕功能素材"},
+      {"action": "draft_script", "args": {}, "basis": "用 P01 生成首稿"},
+      {"action": "estimate_duration", "args": {}, "basis": "检查首稿时长"},
+      {"action": "revise_script", "args": {}, "basis": "首稿 38 秒，压缩到目标附近"},
+      {"action": "estimate_duration", "args": {}, "basis": "复核修订稿"},
+      {"action": "check_rules", "args": {}, "basis": "检查品牌和平台规则"},
+      {"action": "finalize", "args": {}, "basis": "时长和规则均通过"}
+    ],
+    "scripts": [
+      {
+        "script_id": "draft_01",
+        "title": "字幕入门",
+        "shots": [
+          {
+            "shot_id": "S01",
+            "visual": "产品界面操作画面",
+            "narration": "产品支持字幕功能",
+            "subtitle": "字幕功能",
+            "duration_sec": 38,
+            "claim_ids": ["C-P01"]
+          }
+        ]
+      },
+      {
+        "script_id": "draft_02",
+        "title": "字幕入门",
+        "shots": [
+          {
+            "shot_id": "S01",
+            "visual": "产品界面操作画面",
+            "narration": "产品支持字幕功能",
+            "subtitle": "字幕功能",
+            "duration_sec": 28,
+            "claim_ids": ["C-P01"]
+          }
+        ]
+      }
+    ],
+    "tool_overrides": {
+      "search_materials": [
+        {
+          "status": "OK",
+          "results": [
+            {"source_id": "P01", "text": "产品支持字幕功能", "source": "产品说明 v1.2"}
+          ]
+        }
+      ],
+      "duration_total_sec": [38, 28]
+    }
+  },
+  "assertions": {
+    "final_status": "SUCCESS",
+    "must_include_source": "P01",
+    "max_steps": 8,
+    "must_not_include_text": "效率提升 80%"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "brand": [
+    {"id": "BR01", "severity": "block", "rule": {"type": "fact_source_required"}},
+    {"id": "BR02", "severity": "block", "rule": {"type": "forbid_effect_claim_without_data"}},
+    {"id": "BR03", "severity": "block", "rule": {"type": "banned_terms", "terms": ["最", "第一", "绝对"]}},
+    {"id": "BR04", "severity": "warn", "rule": {"type": "subtitle_clearance"}}
+  ],
+  "platform": {
+    "抖音": [
+      {"code": "PLATFORM_DURATION", "severity": "block", "rule": {"max_sec": 180}}
+    ]
+  }
+}

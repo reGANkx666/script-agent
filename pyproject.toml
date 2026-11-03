@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "script-agent"
+version = "0.1.0"
+description = "Deterministic short-video script agent runtime built on LangGraph and DeepSeek"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "pydantic-settings",
+    "langgraph",
+    "langgraph-checkpoint-postgres",
+    "langchain-core",
+    "langchain-openai",
+    "psycopg[binary,pool]",
+    "pgvector",
+    "rank-bm25",
+    "jieba",
+    "httpx",
+    "pypdf",
+    "python-docx",
+    "python-multipart",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]

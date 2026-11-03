@@ -1,0 +1,79 @@
+{
+  "run_id": "example-b_missing_information",
+  "passed": true,
+  "status": "WAITING_INPUT",
+  "result": null,
+  "error": {
+    "status": "WAITING_INPUT",
+    "message": "请补充以下信息后才能继续：发布平台（例如 抖音）、目标时长（秒）"
+  },
+  "trace": [
+    {
+      "seq": 1,
+      "event_type": "node.started",
+      "node": "validate_input",
+      "payload": {
+        "step": 0,
+        "status": "QUEUED"
+      }
+    },
+    {
+      "seq": 2,
+      "event_type": "tool.result",
+      "node": "validate_input",
+      "payload": {
+        "missing_fields": [
+          "platform",
+          "target_duration_sec"
+        ],
+        "risk_codes": [
+          "DEFAULTED_FIELD",
+          "DEFAULTED_FIELD"
+        ]
+      }
+    },
+    {
+      "seq": 3,
+      "event_type": "node.completed",
+      "node": "validate_input",
+      "payload": {
+        "updated_keys": [
+          "brief",
+          "current_node",
+          "last_observation",
+          "missing_fields",
+          "pending_action",
+          "risks",
+          "status"
+        ],
+        "status": "RUNNING"
+      }
+    },
+    {
+      "seq": 4,
+      "event_type": "run.waiting_input",
+      "node": "ask_user",
+      "payload": {
+        "type": "NEEDS_INPUT",
+        "run_id": "example-b_missing_information",
+        "missing": [
+          "platform",
+          "target_duration_sec"
+        ],
+        "question": "请补充以下信息后才能继续：发布平台（例如 抖音）、目标时长（秒）"
+      }
+    }
+  ],
+  "assertions": {
+    "final_status": {
+      "expected": "WAITING_INPUT",
+      "actual": "WAITING_INPUT",
+      "passed": true
+    },
+    "max_steps": {
+      "expected": 0,
+      "actual": 0,
+      "passed": true
+    }
+  }
+}

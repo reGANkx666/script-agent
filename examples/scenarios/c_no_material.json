@@ -1,0 +1,25 @@
+{
+  "name": "c_no_material",
+  "brief": {
+    "topic": "新手做短视频，字幕怎么加",
+    "platform": "抖音",
+    "target_duration_sec": 30
+  },
+  "scenario": {
+    "decisions": [
+      {"action": "search_materials", "args": {"query": "字幕"}, "basis": "第一次检索"},
+      {"action": "search_materials", "args": {"query": "添加字幕"}, "basis": "换词重试"},
+      {"action": "fail", "args": {"status": "NO_MATERIAL", "message": "没有可用素材"}, "basis": "两次检索均为空"}
+    ],
+    "tool_overrides": {
+      "search_materials": [
+        {"status": "EMPTY", "results": []},
+        {"status": "EMPTY", "results": []}
+      ]
+    }
+  },
+  "assertions": {
+    "final_status": "NO_MATERIAL",
+    "max_steps": 8
+  }
+}
